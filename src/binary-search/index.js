@@ -1,3 +1,16 @@
+/**
+ * A busca binária é um algoritmo de busca totalmente otimizado (para listas ordenadas, com custo O Log(N))
+ * que utiliza do conceito 'dividir para conquistar' para encontrar o elemento pesquisado.
+ * Em outras palavras, a busca binária define um elemento central de todo o vetor e faz uma comparação:
+ * - Se o elemento pesquisado for menor do que o elemento central, elimina-se a metade mais à direita (valores maiores)
+ * - Se o elemento pesquisado for maior do que o elemento central, elimina-se a metade mais à esquerda (valores menores)
+ * Com isso, é possível encontrar o valor desejado com poucos passos. 
+ * Sua única limitação exige que a lista esteja ordenada de forma crescente. 
+ * 
+ * Criado por mim, Pedro Henrique de Vasconcellos Almeida (github @pedrovasalmeida),
+ * com o intuito de praticar algoritmos e estrutura de dados.
+ */
+
 import binarySearch from './binary-search.js'
 import recursiveBinarySearch from './recursive-binary-search.js'
 

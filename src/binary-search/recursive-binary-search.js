@@ -1,3 +1,11 @@
+/**
+ * 
+ * @param {*} list - Uma lista de elementos ordenada
+ * @param {*} searchedItem - O item à ser procurado
+ * @param leftIndex - NÃO OBRIGATÓRIO - O indicador de início das buscas no array
+ * @param rightIndex  - NÃO OBRIGATÓRIO - O indicador de fim das buscas no array
+ * @returns O índice do elemento encontrado, ou -1 caso contrário.
+ */
 function recursiveBinarySearch(
   list,
   searchedItem,
