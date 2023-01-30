@@ -10,15 +10,14 @@ function recursiveBinarySearch(
   const middleIndex = Math.floor((leftIndex + rightIndex) / 2)
   const middleValue = list[middleIndex]
 
-  if (middleValue === searchedItem)
-    return middleIndex
+  if (searchedItem === middleValue) return middleIndex
 
-  if (middleValue > searchedItem) {
+  if (searchedItem < middleValue) {
     const newRightIndex = middleIndex - 1
     return recursiveBinarySearch(list, searchedItem, leftIndex, newRightIndex)
   }
 
-  if (middleValue < searchedItem) {
+  if (searchedItem > middleValue) {
     const newLeftIndex = middleIndex + 1
     return recursiveBinarySearch(list, searchedItem, newLeftIndex, rightIndex)
   }

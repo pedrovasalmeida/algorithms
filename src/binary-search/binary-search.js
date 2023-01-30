@@ -7,13 +7,13 @@ function binarySearch(list, searchedItem) {
     let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
     let middleValue = list[middleIndex]
 
-    if (middleValue === searchedItem) return middleIndex
+    if (searchedItem === middleValue) return middleIndex
 
-    if (middleValue > searchedItem) {
+    if (searchedItem < middleValue) {
       rightIndex = middleIndex - 1
     }
 
-    if (middleValue < searchedItem) {
+    if (searchedItem > middleValue) {
       leftIndex = middleIndex + 1
     }
   }
